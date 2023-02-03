@@ -1,0 +1,9 @@
+{
+    "projects": [
+        {
+            "name": "jetton",
+            "path": "./tact/jetton.tact",
+            "output": "./tact/output"
+        }
+    ]
+}
