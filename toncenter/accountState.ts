@@ -1,13 +1,8 @@
 import { Cell, TupleBuilder, TupleReader } from 'ton-core';
 import { nftCollectionAddress, simpleNftCollectionAddress } from '../contract/address';
 import { parseNftCollectionState } from '../contract/parseState';
+import { assert } from '../utils/assert';
 import { toncenter } from './client';
-
-function assert(x: boolean): asserts x {
-    if (x !== true) {
-        throw new Error('Expected string');
-    }
-}
 
 
 (async () => {

@@ -1,14 +1,8 @@
 import { Cell } from 'ton-core';
 import { simpleNftCollectionAddress } from '../contract/address';
 import { parseNftCollectionState } from '../contract/parseState';
+import { assert } from '../utils/assert';
 import { client4 } from './client';
-
-function assert(x: boolean): asserts x {
-    if (x !== true) {
-        throw new Error('Expected string');
-    }
-}
-
 
 (async () => {
     let { last: { seqno } } = await client4.getLastBlock();
